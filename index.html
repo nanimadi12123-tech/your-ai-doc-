@@ -875,8 +875,8 @@ IMPORTANT COMPLIANCE & SAFETY GUIDELINES:
 
         // ==================== GEMINI API INTEGRATION ====================
         async function fetchGeminiResponse(userPrompt, extraSystemPrompt = "") {
-            const apiKey = ""; // Canvas runtime injection
-            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+            const apiKey = "AQ.Ab8RN6K-YLduShKTBZrecxW5UF1uFiSCEBCVhR7WLoYaEG0trA"; // Canvas runtime injection
+            const apiUrl = '';
 
             const activeLangInstruction = `\nActive Selected UI Language: ${state.lang.toUpperCase()} (${state.lang === 'am' ? 'AMHARIC' : 'ENGLISH'}). You MUST respond in ${state.lang === 'am' ? 'AMHARIC' : 'ENGLISH'}.`;
             const fullSystemInstruction = MEDICAL_SYSTEM_INSTRUCTION + activeLangInstruction + "\n" + extraSystemPrompt;
